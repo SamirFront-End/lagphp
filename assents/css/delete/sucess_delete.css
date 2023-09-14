@@ -1,0 +1,111 @@
+body {
+    background-image: url(../../img/pattern.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header {
+    width: 90%;
+    margin: auto;
+    background-color: var(--colorcuatro);
+}
+nav {
+    display: grid;
+    grid-template-columns: 45% 45% 10%;
+    align-items: center;
+    
+}
+.logo-img {
+    width: 30%;
+}
+.menu {
+    width: 80%;
+    margin: auto;
+}
+.link {
+    margin: 0 2.5px;
+    text-decoration: none;
+    font-family: var(--fuenteuno);
+    font-weight: bolder;
+    color: black;
+}
+.link:hover {
+    color: white;
+    font-size: large;
+    transition: 0.25s
+}
+.fa-plug-circle-check, .fa-plug-circle-xmark {
+    font-size: large;
+}
+.sct-sucess-delete {
+    width: 90%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 35%;
+    justify-content: center;
+}
+.cont-sucess-delete {
+    border-radius: 10px;
+    box-shadow: 7px 7px 15px rgba(0, 0, 0, 25%);
+}
+.cont-sucess-delete-img {
+    width: 100%;
+    display: grid;
+    justify-items: center;
+}
+.img-delete-sucess {
+    width: 60%;
+    margin: 15px 0;
+}
+.msg-sucess-delete {
+    width: 100%;
+}
+.h1-sucess-delete {
+    font-family: var(--fuentedos);
+    text-align: center;
+}
+.a-sucess-delete {
+    text-decoration: none;
+}
+.btns-sucess-delete {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    justify-content: space-evenly;
+}
+.btn-sucess-delete {
+    width: 100%;
+    background-color: var(--colordos);
+}
+.p-sucess-delete {
+    color: white;
+    padding: 15px 0;
+    font-family: var(--fuenteuno);
+    text-align: center;
+}
+.btn-sucess-delete:hover {
+    background-color: var(--oscurodos);
+}
+footer {
+    background-color: var(--colorcuatro);
+    width: 90%;
+    margin: auto;
+}
+.footer {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    justify-content: center;
+}
+.dev, .networks {
+    margin: 15px;
+    text-align: center;
+}
+.p-footer {
+    font-family: var(--fuentetres);
+    font-size: smaller;
+}
+.icon_link {
+    color: white;
+    font-size: x-large;
+    margin: 0 5px;
+}

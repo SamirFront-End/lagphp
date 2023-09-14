@@ -1,0 +1,119 @@
+body {
+    background-image: url(../../img/pattern.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header {
+    width: 90%;
+    margin: auto;
+    background-color: var(--colorcuatro);
+}
+nav {
+    display: grid;
+    grid-template-columns: 45% 45% 10%;
+    align-items: center;
+    
+}
+.logo-img {
+    width: 30%;
+}
+.menu {
+    width: 80%;
+    margin: auto;
+}
+.link {
+    margin: 0 2.5px;
+    text-decoration: none;
+    font-family: var(--fuenteuno);
+    font-weight: bolder;
+    color: black;
+}
+.link:hover {
+    color: white;
+    font-size: large;
+    transition: 0.25s
+}
+.fa-plug-circle-check, .fa-plug-circle-xmark {
+    font-size: large;
+}
+.sct-sucess {
+    width: 90%; 
+    margin: auto;
+    margin-bottom: 80px;
+}
+.cont-sucess {
+    width: 90%;
+    margin: auto;
+}
+.card-sucess {
+    width: 50%;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 7px 7px 15px rgba(0, 0, 0, 25%);
+}
+.head-sucess, .body-sucess {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+}
+.img-head-sucess {
+    width: 40%;
+    box-sizing: border-box;
+}
+.p-body-sucess {
+    font-family: var(--fuenteuno);
+    font-size: xx-large;
+}
+.btns-sucess {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    justify-content:space-evenly;
+}
+.btn-create-more, .return {
+    width: 60%;
+    background-color: var(--colortres);
+    cursor: pointer;
+    margin: 15px auto;
+}
+.return:hover {
+    background-color: var(--oscurotres);
+}
+.btn-create-more:hover {
+    background-color: var(--oscurotres);
+}
+.a-btn-sucess {
+    text-decoration: none;
+}
+.p-btn-sucess {
+    text-align: center;
+    color: white;
+    font-family: var(--fuenteuno);
+    font-size: medium;
+    padding: 15px;
+}
+footer {
+    background-color: var(--colorcuatro);
+    width: 90%;
+    margin: auto;
+}
+.footer {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    justify-content: center;
+}
+.dev, .networks {
+    margin: 15px;
+    text-align: center;
+}
+.p-footer {
+    font-family: var(--fuentetres);
+    font-size: smaller;
+}
+.icon_link {
+    color: white;
+    font-size: x-large;
+    margin: 0 5px;
+}

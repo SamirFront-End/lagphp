@@ -1,0 +1,122 @@
+body {
+    background-image: url(../../img/pattern.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header {
+    width: 90%;
+    margin: auto;
+    background-color: var(--colorcuatro);
+}
+nav {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    
+}
+.logo-img {
+    width: 30%;
+}
+.menu {
+    width: 80%;
+    margin: auto;
+}
+.link {
+    margin: 0 5px;
+    text-decoration: none;
+    font-family: var(--fuenteuno);
+    font-weight: bolder;
+    color: black;
+}
+.link:hover {
+    color: white;
+    font-size: large;
+    transition: 0.25s
+}
+section {
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    justify-content: space-evenly;
+}
+.cards {
+    background-color: var(--clarocuatro);
+    box-shadow: 7px 7px 15px rgba(0, 0, 0, 25%);
+}
+.img-card {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.img-srch, .img-create, .img-updt, .img-dlt {
+    width: 70%;
+    margin: auto;
+}
+.p-card {
+    text-align: center;
+    font-family: var(--fuentedos);
+    font-weight: bolder;
+}
+.cards:hover {
+    background-color: var(--colorcuatro);
+    transition: all 0.50s;
+    transform:scale(1.1, 1.1);
+}
+.footer-card {
+    width: 90%;
+    margin: auto;
+}
+.txt-card {
+    text-align: center;
+    font-family: var(--fuentetres);
+    font-size: small;
+    font-weight: lighter;
+}
+.btn-card {
+    background-color: var(--colortres);
+    width: 60%;
+    margin: auto;
+}
+.btn-card:hover {
+    cursor: pointer;
+    background-color: var(--oscurotres);
+}
+.a-card {
+    text-decoration: none;
+}
+.p-btn {
+    font-family: var(--fuenteuno);
+    font-size: small;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+footer {
+    background-color: var(--coloruno);
+    width: 90%;
+    margin: auto;
+}
+.footer {
+    width: 90%;
+    /* background-color: blue; */
+    margin: auto;
+    display: grid;
+    justify-content:center;
+}
+.dev, .networks {
+    /* background-color: beige; */
+    margin: 15px;
+    text-align: center;
+}
+.p-footer {
+    font-family: var(--fuentetres);
+    font-size: smaller;
+}
+.icon_link {
+    color: white;
+    font-size: x-large;
+    margin: 0 5px;
+}

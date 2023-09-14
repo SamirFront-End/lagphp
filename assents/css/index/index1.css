@@ -1,0 +1,121 @@
+body {
+    background-image: url(../../img/pattern.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* header {
+    background-color: var(--coloruno);
+    width: 50%;
+    display: flex;
+}
+nav{
+    background-color: var(--colordos);
+    width: 50%;
+    margin-left: 50%;
+}
+.menu, a {
+    
+} */
+section {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items:center;
+}
+.logo {
+    background-color: var(--coloruno);
+    max-width: 100%;
+    max-height: 100%;
+}
+.logo, img {
+    padding: 19% 0% 19% 12%;
+}
+fieldset {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+    border-color: var(--colordos);
+    border-radius: 5px;
+    box-shadow: 7px 7px 15px rgba(0, 0, 0, 25%);
+}
+legend {
+    font-family: var(--fuenteuno);
+    font-weight: bolder;
+    font-size: x-large;
+}
+.i-log {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: var(--colortres);
+}
+.fa-user-lock {
+    font-size: 80px;
+    margin-left: 40%;
+}
+.inp-cont {
+    position: relative;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-sizing: border-box;
+}
+.inp_log {
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 0px;
+    border-bottom: 1px solid var(--coloruno);
+    padding: 1.375rem 0.5rem 0.5rem;
+    height: 2.25rem;
+    width: 100%;
+}
+.inp_log::placeholder {
+    visibility: hidden;
+    color: var(--colorcinco);
+}
+.inp_log:focus {
+    outline: none;
+}
+.inp-lab {
+    position: absolute;
+    top: 0.938rem;
+    left: 0.5rem;
+    font-family: var(--fuentetres);
+    font-style: italic;
+    font-size: smaller;
+    color: #808080;
+    transition: all 0.25s;
+}
+.inp_log:not(:placeholder-shown) + .inp-lab, .inp_log:focus + .inp-lab {
+    font-size: 0.875rem;
+    top: -0.5rem;
+    transition: all 0.25s;
+}
+.inp-sub {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.submit {
+    border: none;
+    border-radius: 5px;
+    background-color: var(--colortres);
+    color: white;
+    font-size: 20px;
+    font-family: var(--fuenteuno);
+    width: 40%;
+    padding: 10px;
+    margin-left: 30%;
+    cursor: pointer;
+}
+.submit:hover {
+    background-color: var(--colordos);
+}
+.p-reg, p {
+    font-family: var(--fuentetres);
+    font-size: smaller;
+    text-align: center;
+}
+#a-reg {
+    text-decoration: none;
+    font-weight: bolder;
+}

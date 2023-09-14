@@ -1,0 +1,26 @@
+:root{
+    /* VARIABLES COLOR */
+    --coloruno: #22b6eb;
+    --colordos: #0145c1;
+    --colortres: #002881;
+    --colorcuatro: #00b8c8;
+    --colorcinco: #012054;
+    --clarouno: #6fd8ff;
+    --clarodos: #4388ff;
+    --clarotres: #3d5cbf;
+    --clarocuatro: #66d8e0;
+    --clarocinco: #2c3b7c;
+    --oscurouno: #1a98c8;
+    --oscurodos: #003aaf;
+    --oscurotres: #001f6a;
+    --oscurocuatro: #0099aa;
+    --oscurocinco: #00183b;
+    /* VARIABLE DE TEXTO */
+    --fuenteuno: 'Roboto', sans-serif;
+    --fuentedos: 'Montserrat', sans-serif;
+    --fuentetres: 'Playfair Display', serif;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+}
