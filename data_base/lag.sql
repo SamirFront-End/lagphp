@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 14-09-2023 a las 21:51:12
+-- Tiempo de generación: 18-09-2023 a las 01:01:10
 -- Versión del servidor: 10.1.38-MariaDB
 -- Versión de PHP: 7.3.2
 
@@ -92,6 +92,18 @@ CREATE TABLE `tipo_equipamiento` (
   `id_tipo_eq` int(8) NOT NULL,
   `nombre_tipo_eq` varchar(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `tipo_equipamiento`
+--
+
+INSERT INTO `tipo_equipamiento` (`id_tipo_eq`, `nombre_tipo_eq`) VALUES
+(1, 'Original'),
+(2, 'Adicional'),
+(3, 'Promocional'),
+(4, 'Preferencial'),
+(5, 'Premium'),
+(6, 'Gold');
 
 -- --------------------------------------------------------
 
@@ -247,13 +259,13 @@ ALTER TABLE `modo_pago`
 -- AUTO_INCREMENT de la tabla `tipo_equipamiento`
 --
 ALTER TABLE `tipo_equipamiento`
-  MODIFY `id_tipo_eq` int(8) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_tipo_eq` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT de la tabla `vehiculos`
 --
 ALTER TABLE `vehiculos`
-  MODIFY `Id_vehiculo` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `Id_vehiculo` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT de la tabla `ventas`

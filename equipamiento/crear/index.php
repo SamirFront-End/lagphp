@@ -6,9 +6,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../assents/css/reset.css">
-    <link rel="stylesheet" href="../assents/css/cars/consult.css">
-    <link rel="icon" href="../assents/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../../assents/css/reset.css">
+    <link rel="stylesheet" href="../../assents/css/equipamiento/crear/index.css">
+    <link rel="icon" href="../../assents/img/favicon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/76750b34bb.js" crossorigin="anonymous"></script>
     <title>LaRusso Auto Group</title>
 </head>
@@ -16,18 +16,18 @@
     <header>
         <nav>
             <div class="logo">
-                <img class="logo-img" src="../assents/img/logo2.png" alt="">
+                <img class="logo-img" src="../../assents/img/logo2.png" alt="">
             </div>
             <div class="menu">
-                <a class="link" href="#">Vehiculo</a>
-                <a class="link" href="../equipamiento/index.php">Equipamiento</a>
+                <a class="link" href="../vehiculos/index.php">Vehiculo</a>
+                <a class="link" href="#">Equipamiento</a>
                 <a class="link" href="../vendedores/index.php">Vendedores</a>
                 <a class="link" href="../sucursales/index.php">Sucursales</a>
                 <a class="link" href="../ventas/index.php">Ventas</a>
             </div>
             <div class="cnx">
                 <?php
-                    require ("../cnx.php");
+                    require ("../../cnx.php");
                 ?>
             </div>
         </nav>
@@ -35,28 +35,36 @@
     <section>
         <article class="cards">
             <div class="img-card">
-                <img src="../assents/img/lagicons/car-sport-outline.svg" alt="Buscar vehiculo" class="img-srch">
+                <img src="../../assents/img/lagicons/iconmonstr-wrench-12.svg" alt="Crear vehiculo" class="img-create">
             </div>
             <div class="body-card">
-                <h1 class="p-card">Encontrar vehiculos</h1>
+                <h1 class="p-card">Agregar nuevos tipos de equipamiento</h1>
             </div>
-            <div class="footer-card">
-                <h3 class="txt-card">Aqui puede obtener el listado de vehiculos dispobles, buscalo por Marca, serie o modelo</h3>
+            <div  class="footer-card">
+                <h3 class="txt-card">Aqui puede agregar nuevos tipos de equipamiento para complementar las caracteristicas de los vehiculos</h3>
             </div>
+            <a class="a-card" href="../crear/tipo/crear/index.php">
+                <div class="btn-card">
+                    <p class="p-btn">Registrar</p>
+                </div>
+            </a> 
         </article>
-    </section>
-    <section class="search">
-        <div class="resul">
-            <form method="POST" action="">
-                    <input class="buscar" type="text" name="bscr" placeholder="Buscar">
-                    <input class="btn-submit" type="submit" name="send" value= "Buscar">
-            </form>
-        </div>
-    </section>
-    <section class="resultado">
-        <?php
-            require ("../vehiculos/function-consulta.php");
-        ?>
+        <article class="cards">
+            <div class="img-card">
+                <img src="../../assents/img/lagicons/iconmonstr-wrench-12.svg" alt="Crear vehiculo" class="img-create">
+            </div>
+            <div class="body-card">
+                <h1 class="p-card">Agregar nuevos equipamiento</h1>
+            </div>
+            <div  class="footer-card">
+                <h3 class="txt-card">Aqui puede agregar nuevos equipamientos para nuestros vehiculos</h3>
+            </div>
+            <a class="a-card" href="../crear/tipo/crear/index.php">
+                <div class="btn-card">
+                    <p class="p-btn">Registrar</p>
+                </div>
+            </a> 
+        </article>
     </section>
     <footer>
         <div class="footer">

@@ -1,0 +1,116 @@
+body {
+    background-image: url(../../../../img/pattern.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header {
+    width: 90%;
+    margin: auto;
+    background-color: var(--colorcuatro);
+}
+nav {
+    display: grid;
+    grid-template-columns: 45% 45% 10%;
+    align-items: center;
+    
+}
+.logo-img {
+    width: 30%;
+}
+.menu {
+    width: 80%;
+    margin: auto;
+}
+.link {
+    margin: 0 2.5px;
+    text-decoration: none;
+    font-family: var(--fuenteuno);
+    font-weight: bolder;
+    color: black;
+}
+.link:hover {
+    color: white;
+    font-size: large;
+    transition: 0.25s
+}
+.sct-tipo {
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: 40%;
+    justify-content: space-evenly;
+}
+.frm-tipo-create {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 7px 7px 15px rgba(0, 0, 0, 25%);
+}
+.cont-img {
+    width: 90%;
+    margin: 20px auto;
+    display: grid;
+    justify-content: center;
+}
+.img-tipo-create {
+    width: 50%;
+    margin: auto;
+}
+.p-create {
+    width: 90%;
+    margin: 10px auto;
+    text-align: center;
+    font-family: var(--fuentedos);
+    font-size: x-large;
+    margin-bottom: 20px;
+}
+.cont-btn-creatype{
+    display: grid;
+    align-items: center;
+}
+.btn-creatype {
+    background-color: var(--colortres);
+    width: 100%;
+}
+.p-create-type {
+    text-align: center;
+    color: white;
+    font-family: var(--fuenteuno);
+    font-size: larger;
+    padding: 20px;
+}
+.p-create-type:hover {
+    cursor: pointer;
+    background-color: var(--oscurotres);
+}
+.a-create-type {
+    text-decoration: none;
+    width: 40% ;
+    height: 80%;
+    margin: auto;
+}
+footer {
+    background-color: var(--coloruno);
+    width: 90%;
+    margin: auto;
+}
+.footer {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    justify-content:center;
+}
+.dev, .networks {
+    margin: 15px;
+    text-align: center;
+}
+.p-footer {
+    font-family: var(--fuentetres);
+    font-size: smaller;
+}
+.icon_link {
+    color: white;
+    font-size: x-large;
+    margin: 0 5px;
+}

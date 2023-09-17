@@ -1,0 +1,130 @@
+body {
+    background-image: url(../../../img/pattern.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header {
+    width: 90%;
+    margin: auto;
+    background-color: var(--colorcuatro);
+}
+nav {
+    display: grid;
+    grid-template-columns: 45% 45% 10%;
+    align-items: center;
+    
+}
+.logo-img {
+    width: 30%;
+}
+.menu {
+    width: 80%;
+    margin: auto;
+}
+.link {
+    margin: 0 2.5px;
+    text-decoration: none;
+    font-family: var(--fuenteuno);
+    font-weight: bolder;
+    color: black;
+}
+.link:hover {
+    color: white;
+    font-size: large;
+    transition: 0.25s
+}
+.sct-list-tipo {
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: 80%;
+    justify-content: space-evenly;
+}
+.title {
+    margin-bottom: 20px;
+}
+.h1-title {
+    width: 60%;
+    margin: 20px auto;
+    text-align: center;
+    font-family: var(--fuenteuno);
+    font-size: xx-large;
+}
+.list-tipo {
+    width: 90%;
+    margin: auto;
+}
+.row-td-table:nth-child(even) {
+    background-color: var(--clarouno);
+}
+.row-td-table:nth-child(odd) {
+    background-color: var(--coloruno);
+}
+.th-table, .td-table {
+    text-align: center;
+    padding: 15px 0;
+    font-family: var(--fuentedos);
+}
+.td-table-btn {
+    text-align: center;
+    padding: 15px 0;
+    background-color: var(--colortres);
+    border-radius: 5px;
+}
+.td-table-btn:hover {
+    cursor: pointer;
+    background-color: var(--oscurotres);
+}
+.th-table {
+    background-color: var(--oscurouno);
+}
+.td-btn-table {
+    font-size: x-large;
+    color: white;
+}
+.cont-count-add {
+    width: 100%;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    justify-content: space-evenly;
+}
+.h2-count, .h2-add {
+    text-align: center;
+    font-family: var(--fuentetres);
+    font-style: oblique;
+    font-size: medium;
+}
+.fa-circle-plus, .fa-magnifying-glass {
+    color: var(--colortres);
+    margin-left: 10px;
+}
+.fa-circle-plus:hover, .fa-magnifying-glass:hover {
+    color: var(--oscurotres);
+}
+footer {
+    background-color: var(--coloruno);
+    width: 90%;
+    margin: auto;
+}
+.footer {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    justify-content:center;
+}
+.dev, .networks {
+    margin: 15px;
+    text-align: center;
+}
+.p-footer {
+    font-family: var(--fuentetres);
+    font-size: smaller;
+}
+.icon_link {
+    color: white;
+    font-size: x-large;
+    margin: 0 5px;
+}

@@ -1,0 +1,125 @@
+body {
+    background-image: url(../../../../img/pattern.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header {
+    width: 90%;
+    margin: auto;
+    background-color: var(--colorcuatro);
+}
+nav {
+    display: grid;
+    grid-template-columns: 45% 45% 10%;
+    align-items: center;
+    
+}
+.logo-img {
+    width: 30%;
+}
+.menu {
+    width: 80%;
+    margin: auto;
+}
+.link {
+    margin: 0 2.5px;
+    text-decoration: none;
+    font-family: var(--fuenteuno);
+    font-weight: bolder;
+    color: black;
+}
+.link:hover {
+    color: white;
+    font-size: large;
+    transition: 0.25s
+}
+.sct-tipo {
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: 40%;
+    justify-content: space-evenly;
+}
+.frm-tipo-create {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 7px 7px 15px rgba(0, 0, 0, 25%);
+}
+.cont-img {
+    width: 90%;
+    margin: 20px auto;
+    display: grid;
+    justify-content: center;
+}
+.img-tipo-create {
+    width: 50%;
+    margin: auto;
+}
+.p-create {
+    width: 90%;
+    margin: 10px auto;
+    text-align: center;
+    font-family: var(--fuentedos);
+    font-size: x-large;
+    margin-bottom: 20px;
+}
+.cont-inp-creatipo {
+    display: grid;
+    justify-items: center;
+}
+.inp-create {
+    width: 90%;
+    height: 100%;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid var(--colorcuatro);
+    font-family: var(--fuenteuno);
+}
+.inp-create:focus {
+    border: 1px solid var(--colorcuatro);
+    outline: none;
+}
+.cont-btns {
+    display: grid;
+    justify-items: center;
+    margin: 20px 0;
+}
+.btn-creatipo {
+    width: 30%;
+    border: none;
+    color: white;
+    background-color: var(--colortres);
+    padding: 15px;
+    font-family: var(--fuenteuno);
+    font-size: large;
+}
+.btn-creatipo:hover {
+    background-color: var(--oscurotres);
+    cursor: pointer;
+}
+footer {
+    background-color: var(--coloruno);
+    width: 90%;
+    margin: auto;
+}
+.footer {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    justify-content:center;
+}
+.dev, .networks {
+    margin: 15px;
+    text-align: center;
+}
+.p-footer {
+    font-family: var(--fuentetres);
+    font-size: smaller;
+}
+.icon_link {
+    color: white;
+    font-size: x-large;
+    margin: 0 5px;
+}

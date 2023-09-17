@@ -54,7 +54,7 @@
             <div  class="footer-card">
                 <h3 class="txt-card">Aqui puede agregar nuevos equipamientos para nuestros vehiculos</h3>
             </div>
-            <a class="a-card" href="../vehiculos/crear/index.php">
+            <a class="a-card" href="../equipamiento/crear/index.php">
                 <div class="btn-card">
                     <p class="p-btn">Registrar</p>
                 </div>

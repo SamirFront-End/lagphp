@@ -6,9 +6,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../assents/css/reset.css">
-    <link rel="stylesheet" href="../assents/css/cars/consult.css">
-    <link rel="icon" href="../assents/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../../../../assents/css/reset.css">
+    <link rel="stylesheet" href="../../../../assents/css/equipamiento/tipos/consultar/consultindex.css">
+    <link rel="icon" href="../../../../assents/img/favicon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/76750b34bb.js" crossorigin="anonymous"></script>
     <title>LaRusso Auto Group</title>
 </head>
@@ -16,32 +16,32 @@
     <header>
         <nav>
             <div class="logo">
-                <img class="logo-img" src="../assents/img/logo2.png" alt="">
+                <img class="logo-img" src="../../../../assents/img/logo2.png" alt="">
             </div>
             <div class="menu">
-                <a class="link" href="#">Vehiculo</a>
-                <a class="link" href="../equipamiento/index.php">Equipamiento</a>
+                <a class="link" href="../vehiculos/index.php">Vehiculo</a>
+                <a class="link" href="#">Equipamiento</a>
                 <a class="link" href="../vendedores/index.php">Vendedores</a>
                 <a class="link" href="../sucursales/index.php">Sucursales</a>
                 <a class="link" href="../ventas/index.php">Ventas</a>
             </div>
             <div class="cnx">
                 <?php
-                    require ("../cnx.php");
+                    require ("../../../../cnx.php");
                 ?>
             </div>
         </nav>
     </header>
-    <section>
+    <section class="sct-srch-tipo">
         <article class="cards">
             <div class="img-card">
-                <img src="../assents/img/lagicons/car-sport-outline.svg" alt="Buscar vehiculo" class="img-srch">
+                <img src="../../../../assents/img/lagicons/magnifying-glass-8-svgrepo-com.svg" alt="Buscar vehiculo" class="img-srch">
             </div>
             <div class="body-card">
-                <h1 class="p-card">Encontrar vehiculos</h1>
+                <h1 class="p-card">Buscar equipamiento</h1>
             </div>
             <div class="footer-card">
-                <h3 class="txt-card">Aqui puede obtener el listado de vehiculos dispobles, buscalo por Marca, serie o modelo</h3>
+                <h3 class="txt-card">Aqui puede obtener el listado de equipamientos disponibles en nuestro concesionario</h3>
             </div>
         </article>
     </section>
@@ -55,7 +55,7 @@
     </section>
     <section class="resultado">
         <?php
-            require ("../vehiculos/function-consulta.php");
+            include ("function-consult.php");
         ?>
     </section>
     <footer>
