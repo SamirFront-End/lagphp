@@ -14,12 +14,12 @@
             <td class='td-table'>". $rows['id_tipo_eq'] ."</td>
             <td class='td-table'>". $rows['nombre_tipo_eq'] ."</td>
             <td class='td-table-btn'>
-                <a class='td-btn-table' href=''>
+                <a class='td-btn-table' href='editar/index.php?ide=" .$rows['id_tipo_eq']. "'>
                     <i class='fa-solid fa-pen-to-square'></i>
                 </a>
             </td>
             <td class='td-table-btn'>
-                <a class='td-btn-table' href=''>
+                <a class='td-btn-table' href='eliminar/index.php?ide=" .$rows['nombre_tipo_eq']. "'>
                     <i class='fa-solid fa-trash-can'></i>
                 </a>
             </td>
