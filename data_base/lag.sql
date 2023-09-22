@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 18-09-2023 a las 01:01:10
+-- Tiempo de generación: 22-09-2023 a las 23:45:05
 -- Versión del servidor: 10.1.38-MariaDB
 -- Versión de PHP: 7.3.2
 
@@ -103,7 +103,8 @@ INSERT INTO `tipo_equipamiento` (`id_tipo_eq`, `nombre_tipo_eq`) VALUES
 (3, 'Promocional'),
 (4, 'Preferencial'),
 (5, 'Premium'),
-(6, 'Gold');
+(6, 'Gold'),
+(7, 'De prueba');
 
 -- --------------------------------------------------------
 
@@ -130,11 +131,12 @@ CREATE TABLE `vehiculos` (
 --
 
 INSERT INTO `vehiculos` (`Id_vehiculo`, `marca_veh`, `serie_veh`, `modelo_veh`, `bastidor_veh`, `potencia_veh`, `motor_veh`, `nro_cilindros_veh`, `cilindrada_veh`, `precio_veh`, `descuento_veh`) VALUES
-(1, 'Mini', 'jhon cooper', '2023', 'MINI012020', '231HP', '2,0', '4', '1.998cm3', 216900000, '0'),
+(1, 'Mini', 'jhon cooper', '2024', 'MINI012020', '231HP', '2,0', '4', '1.998cm3', 216900000, '0'),
 (2, 'Renault', 'Sandero', '2024', 'RENAULT202402', '111HP', '1.6', '4', '1.598cm3', 60990000, '0'),
 (3, 'Chevrolet', 'Blaser RS', '2023', 'blaserrs32023', '308 HP', '3,6', '6', '2.722cm3', 215650000, '0'),
 (4, 'Mazda', 'Touring', '2024', 'touring42024', '153HP', '2,0', '4', '1.998cm3', 113950000, '0'),
-(5, 'Ford', 'Mustang GT Premium', '2024', 'ford5mgtp2024', '457HP', '5,0', '8', '5.000cm3', 244490000, '0');
+(5, 'Ford', 'Mustang GT Premium', '2024', 'ford5mgtp2024', '457HP', '5,0', '8', '5.000cm3', 244490000, '0'),
+(6, 'Toyota', 'LAND CRUISER', '2023', 'lcrtyt2023', '409HP', '5,0', '8', '3.445cm3', 600500000, '0');
 
 -- --------------------------------------------------------
 
@@ -259,13 +261,13 @@ ALTER TABLE `modo_pago`
 -- AUTO_INCREMENT de la tabla `tipo_equipamiento`
 --
 ALTER TABLE `tipo_equipamiento`
-  MODIFY `id_tipo_eq` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id_tipo_eq` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT de la tabla `vehiculos`
 --
 ALTER TABLE `vehiculos`
-  MODIFY `Id_vehiculo` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `Id_vehiculo` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT de la tabla `ventas`
