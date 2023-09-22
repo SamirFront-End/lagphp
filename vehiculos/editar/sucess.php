@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../assents/css/reset.css">
     <link rel="stylesheet" href="../../assents/css/edit/sucess.css">
-    <link rel="icon" href="../assents/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../../assents/img/favicon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/76750b34bb.js" crossorigin="anonymous"></script>
     <title>LaRusso Auto Group</title>
 </head>

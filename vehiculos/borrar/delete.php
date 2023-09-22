@@ -1,5 +1,5 @@
 <?php
-    $id= $_GET["ide"];
+    if (@$id= $_GET["ide"]) {
     $consult= "SELECT * FROM vehiculos WHERE Id_vehiculo = '$id'";
 
     if($result = mysqli_query($cnx, $consult)) {
@@ -58,5 +58,21 @@
         </form>
         
     </div>";
+    }
+
+    } else {
+        echo "<section class='sct-card'>
+        <article class='cards'>
+            <div class='img-card'>
+                <img src='../../assents/img/lagicons/error-page-svgrepo-com.svg' alt='Actualizar vehiculo' class='img-updt'>
+            </div>
+            <div class='body-card'>
+                <h1 class='p-card'>No disponible</h1>
+            </div>
+            <div class='footer-card'>
+                <h3 class='txt-card'>El recurso al que estas intentando ingresar no esta disponible</h3>
+            </div>
+        </article>
+    </section>";
     }
 ?>

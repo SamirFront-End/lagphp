@@ -42,5 +42,5 @@
         $numrows= mysqli_num_rows($resultado);
         echo "<h3 class= 'counter'>Se han encontrado $numrows registros</h3>";
         };
-    }
+    } 
 ?>

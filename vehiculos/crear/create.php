@@ -25,7 +25,7 @@
 
         $create= "INSERT INTO vehiculos (marca_veh, serie_veh, modelo_veh, bastidor_veh, potencia_veh, motor_veh, nro_cilindros_veh, cilindrada_veh, precio_veh, descuento_veh) VALUES ('$mark', '$line', '$model', '$bstdr', '$power', '$mot', '$cilis', '$cilia', '$prec', '$dcto')";
 
-    } if (mysqli_query($cnx, $create)) {
+    } if (@mysqli_query($cnx, $create)) {
         echo "<section class='sct-sucess'>
         <article class='cont-sucess'>
             <div class='card-sucess'>
