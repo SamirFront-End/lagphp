@@ -6,9 +6,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../assents/css/reset.css">
-    <link rel="stylesheet" href="../assents/css/cars/index.css">
-    <link rel="icon" href="../assents/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../../../../assents/css/reset.css">
+    <link rel="stylesheet" href="../../../../assents/css/equipamiento/tipos/editar/editype.css">
+    <link rel="icon" href="../../../../assents/img/favicon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/76750b34bb.js" crossorigin="anonymous"></script>
     <title>LaRusso Auto Group</title>
 </head>
@@ -16,82 +16,52 @@
     <header>
         <nav>
             <div class="logo">
-                <img class="logo-img" src="../assents/img/logo2.png" alt="">
+                <img class="logo-img" src="../../../../assents/img/logo2.png" alt="">
             </div>
             <div class="menu">
-                <a class="link" href="#">Vehiculo</a>
-                <a class="link" href="../equipamiento/index.php">Equipamiento</a>
+                <a class="link" href="../vehiculos/index.php">Vehiculo</a>
+                <a class="link" href="#">Equipamiento</a>
                 <a class="link" href="../vendedores/index.php">Vendedores</a>
                 <a class="link" href="../sucursales/index.php">Sucursales</a>
                 <a class="link" href="../ventas/index.php">Ventas</a>
             </div>
+            <div class="cnx">
+                <?php
+                    require ("../../../../cnx.php");
+                ?>
+            </div>
         </nav>
     </header>
     <section>
-            <article class="cards">
-                <div class="img-card">
-                    <img src="../assents/img/lagicons/car-sport-outline.svg" alt="Buscar vehiculo" class="img-srch">
-                </div>
-                <div class="body-card">
-                    <h1 class="p-card">Encontrar vehiculos</h1>
-                </div>
-                <div class="footer-card">
-                    <h3 class="txt-card">Aqui puede obtener el listado de vehiculos dispobles, buscalo por Marca, serie o modelo</h3>
-                </div>
-                <a class="a-card" href="../vehiculos/consulta.php">
-                    <div class="btn-card">
-                        <p class="p-btn">Buscar</p>
-                    </div>
-                </a>
-            </article>
-            <article class="cards">
-                <div class="img-card">
-                    <img src="../assents/img/lagicons/iconmonstr-plus-circle-filled.svg" alt="Crear vehiculo" class="img-create">
-                </div>
-                <div class="body-card">
-                    <h1 class="p-card">Agregar nuevos vehiculos</h1>
-                </div>
-                <div  class="footer-card">
-                    <h3 class="txt-card">Aqui puede agregar nuevas unidades a nuestro listado de vehiculos</h3>
-                </div>
-                <a class="a-card" href="../vehiculos/crear/index.php">
-                    <div class="btn-card">
-                        <p class="p-btn">Registrar</p>
-                    </div>
-                </a> 
-            </article>
-            <article class="cards">
-                <div class="img-card">
-                    <img src="../assents/img/lagicons/iconmonstr-check-mark-square-multiple-filled.svg" alt="Actualizar vehiculo" class="img-updt">
-                </div>
-                <div class="body-card">
-                    <h1 class="p-card">Actualizar vehiculo</h1>
-                </div>
-                <div class="footer-card">
-                    <h3 class="txt-card">Aqui puede editar y actualizar la informacion de nuestros vehiculos disponibles</h3>
-                </div>
-                <a class="a-card" href="../vehiculos/consulta.php">
-                    <div class="btn-card">
-                        <p class="p-btn">Editar</p>
-                    </div>
-                </a>
-            </article>
-            <article class="cards">
-                <div class="img-card">
-                    <img src="../assents/img/lagicons/trash-outline.svg" alt="Borrar registro" class="img-dlt">
-                </div>
-                <div class="body-card">
-                    <h1 class="p-card">Borrar registro</h1>
-                </div>
-                <div class="footer-card">
-                    <h3 class="txt-card">Aqui puede suprimir las unidades que ya no haran parte de nuestro inventario</h3>
-                </div>
-                <a class="a-card" href="../vehiculos/consulta.php">
-                    <div class="btn-card">
-                        <p class="p-btn">Eliminar</p>
-                    </div>
-                </a>
-            </article>
+        <article class="cards">
+            <div class="img-card">
+                <img src="../../../../assents/img/lagicons/iconmonstr-wrench-16.svg" alt="Actualizar vehiculo" class="img-updt">
+            </div>
+            <div class="body-card">
+                <h1 class="p-card">Actualizar equipamiento</h1>
+            </div>
+            <div class="footer-card">
+                <h3 class="txt-card">Aqui puede editar y actualizar los equipamientos para nuestros vehiculos disponibles</h3>
+            </div>
+        </article>
+        <?php
+            include ("editype.php");
+        ?>
+        <!-- <form method="POST" action="sucess.php" class="frm-tipo-edit">
+            <div class="cont-img">
+                <img class="img-tipo-edit" src="../../../../assents/img/lagicons/document-add-svgrepo-com.svg" alt="">
+            </div>
+            <p class="p-edit">
+                Ingresar el nuevo valor
+            </p>
+            <div class="cont-inp-editype">
+                <input type="text" name="id" value= "variable" style="display: none;">
+                <input type="text" class="inp-edit" name="tipo" placeholder="Ingresa el nuevo valor">
+            </div>
+            <div class="cont-btns">
+                <input class="btn-editype" type="submit" value="Guardar">
+            </div>
+        </form> -->
     </section>
     <footer>
         <div class="footer">
