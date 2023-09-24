@@ -19,7 +19,7 @@
                 </a>
             </td>
             <td class='td-table-btn'>
-                <a class='td-btn-table' href='eliminar/index.php?ide=" .$rows['nombre_tipo_eq']. "'>
+                <a class='td-btn-table' href='eliminar/index.php?ide="  .$rows['id_tipo_eq']. '&name=' .$rows['nombre_tipo_eq']. "'>
                     <i class='fa-solid fa-trash-can'></i>
                 </a>
             </td>
@@ -35,7 +35,8 @@
        </div>
        <div class='add'>
            <h2 class='h2-add'>
-               Agregar nuevo o buscar registro <a href='crear/index.php' class='a-add'>
+               Agregar nuevo o buscar registro 
+               <a href='crear/index.php' class='a-add'>
                    <i class='fa-solid fa-circle-plus'></i>
                </a>
                <a href='consultar/index.php' class= 'a-add'>

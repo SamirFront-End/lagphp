@@ -104,6 +104,9 @@ nav {
 .fa-circle-plus:hover, .fa-magnifying-glass:hover {
     color: var(--oscurotres);
 }
+.a-add {
+    text-decoration: none;
+}
 footer {
     background-color: var(--coloruno);
     width: 90%;

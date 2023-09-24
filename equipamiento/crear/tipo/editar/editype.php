@@ -20,9 +20,37 @@
             </div>
         </form>";
         } else {
-            echo "<h1>ALGO FALLO</h1>";
+            echo "<form method='POST' action='sucess.php' class='frm-tipo-edit'>
+            <div class='cont-img'>
+                <img class='img-tipo-edit' src='../../../../assents/img/lagicons/test-failed-svgrepo-com.svg' alt=''>
+            </div>
+            <p class='p-edit'>
+                Conexion fallida con la base de datos
+            </p>
+            <div class='cont-btns'>
+                <a href='../view.php' class='a-btn'>
+                    <div class='btn-fail'>
+                        <p class='p-btn'>Regresar</p>
+                    </div>
+                </a>
+            </div>
+        </form>";
         }
     } else {
-        echo "<h1>ERROR 404</h1>";
+        echo "<form method='POST' action='sucess.php' class='frm-tipo-edit'>
+        <div class='cont-img'>
+            <img class='img-tipo-edit' src='../../../../assents/img/lagicons/error-page-svgrepo-com.svg' alt=''>
+        </div>
+        <p class='p-edit'>
+            El recurso al que intentas ingresar no esta disponible
+        </p>
+        <div class='cont-btns'>
+            <a href='../view.php' class='a-btn'>
+                <div class='btn-fail'>
+                    <p class='p-btn'>Regresar</p>
+                </div>
+            </a>
+        </div>
+    </form>";
     }
 ?>

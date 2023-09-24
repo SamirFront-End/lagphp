@@ -19,11 +19,11 @@
                 <img class="logo-img" src="../../../../assents/img/logo2.png" alt="">
             </div>
             <div class="menu">
-                <a class="link" href="../vehiculos/index.php">Vehiculo</a>
-                <a class="link" href="#">Equipamiento</a>
-                <a class="link" href="../vendedores/index.php">Vendedores</a>
-                <a class="link" href="../sucursales/index.php">Sucursales</a>
-                <a class="link" href="../ventas/index.php">Ventas</a>
+                <a class="link" href="../../../../vehiculos/index.php">Vehiculo</a>
+                <a class="link" href="../../../../equipamiento/index.php">Equipamiento</a>
+                <a class="link" href="../../../../vendedores/index.php">Vendedores</a>
+                <a class="link" href="../../../../sucursales/index.php">Sucursales</a>
+                <a class="link" href="../../../../ventas/index.php">Ventas</a>
             </div>
             <div class="cnx">
                 <?php

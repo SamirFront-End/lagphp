@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../../../assents/css/reset.css">
-    <link rel="stylesheet" href="../../../../assents/css/delete/confirm.css">
+    <link rel="stylesheet" href="../../../../assents/css/delete/sucess_delete.css">
     <link rel="icon" href="../../../../assents/img/favicon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/76750b34bb.js" crossorigin="anonymous"></script>
     <title>LaRusso Auto Group</title>
@@ -32,20 +32,10 @@
             </div>
         </nav>
     </header>
-    <section class="sct-confirm">
-    <div class='icon-confirm'>
-        <img class='img-confirm' src='../../../../assents/img/lagicons/car-repairadvertencia-car-svgrepo-com.svg' alt=''>
-        <div class='advert-confirm'>
-            <p class='p-advert-confirm'>
-                <strong>ADVERTENCIA:</strong> El registro que sea eliminado no se podra recuperar, ni la informacion asociada a sus registros
-            </p>
-        </div>
-    </div>
-    <div class='cont-frm-confirm'>
+    <section class="sct-sucess-delete">
         <?php
-            include ("./delete-confirm.php")
+            include ("./delete.php");
         ?>
-    </div>
     </section>
     <footer>
         <div class="footer">

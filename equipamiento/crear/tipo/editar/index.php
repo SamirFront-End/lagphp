@@ -47,21 +47,6 @@
         <?php
             include ("editype.php");
         ?>
-        <!-- <form method="POST" action="sucess.php" class="frm-tipo-edit">
-            <div class="cont-img">
-                <img class="img-tipo-edit" src="../../../../assents/img/lagicons/document-add-svgrepo-com.svg" alt="">
-            </div>
-            <p class="p-edit">
-                Ingresar el nuevo valor
-            </p>
-            <div class="cont-inp-editype">
-                <input type="text" name="id" value= "variable" style="display: none;">
-                <input type="text" class="inp-edit" name="tipo" placeholder="Ingresa el nuevo valor">
-            </div>
-            <div class="cont-btns">
-                <input class="btn-editype" type="submit" value="Guardar">
-            </div>
-        </form> -->
     </section>
     <footer>
         <div class="footer">

@@ -38,7 +38,7 @@
             <div class="footer-card">
                 <h3 class="txt-card">Aqui puede obtener el listado de equipamientos dispobles para cada modelo de automovil</h3>
             </div>
-            <a class="a-card" href="../vehiculos/consulta.php">
+            <a class="a-card" href="../equipamiento/crear/tipo/consultar/index.php">
                 <div class="btn-card">
                     <p class="p-btn">Buscar</p>
                 </div>
@@ -70,7 +70,7 @@
             <div class="footer-card">
                 <h3 class="txt-card">Aqui puede editar y actualizar los equipamientos para nuestros vehiculos disponibles</h3>
             </div>
-            <a class="a-card" href="../vehiculos/consulta.php">
+            <a class="a-card" href="../equipamiento/crear/tipo/view.php">
                 <div class="btn-card">
                     <p class="p-btn">Editar</p>
                 </div>
@@ -86,7 +86,7 @@
             <div class="footer-card">
                 <h3 class="txt-card">Aqui puede suprimir los equipamientos que ya no haran parte de nuestro inventario</h3>
             </div>
-            <a class="a-card" href="../vehiculos/consulta.php">
+            <a class="a-card" href="../equipamiento/crear/tipo/view.php">
                 <div class="btn-card">
                     <p class="p-btn">Eliminar</p>
                 </div>
