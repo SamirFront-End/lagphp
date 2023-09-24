@@ -52,7 +52,7 @@
                     </div> 
                     <div class="p-reg">
                         <p>Si no tienes una cuenta  registrate 
-                            <a id="a-reg" href="">aqui</a>
+                            <a id="a-reg" href="./vehiculos/index.php">aqui</a>
                         </p>
                     </div>
                 </fieldset>

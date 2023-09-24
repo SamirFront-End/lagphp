@@ -6,9 +6,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../assents/css/reset.css">
-    <link rel="stylesheet" href="../assents/css/cars/index.css">
-    <link rel="icon" href="../assents/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../../assents/css/reset.css">
+    <link rel="stylesheet" href="../../assents/css/equipamiento/crear/index.css">
+    <link rel="icon" href="../../assents/img/favicon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/76750b34bb.js" crossorigin="anonymous"></script>
     <title>LaRusso Auto Group</title>
 </head>
@@ -16,81 +16,54 @@
     <header>
         <nav>
             <div class="logo">
-                <img class="logo-img" src="../assents/img/logo2.png" alt="">
+                <img class="logo-img" src="../../assents/img/logo2.png" alt="">
             </div>
             <div class="menu">
-                <a class="link" href="../vehiculos/index.php">Vehiculo</a>
-                <a class="link" href="#">Equipamiento</a>
-                <a class="link" href="../vendedores/index.php">Vendedores</a>
-                <a class="link" href="../sucursales/index.php">Sucursales</a>
-                <a class="link" href="../ventas/index.php">Ventas</a>
+                <a class="link" href="../../vehiculos/index.php">Vehiculo</a>
+                <a class="link" href="../../equipamiento/">Equipamiento</a>
+                <a class="link" href="../../vendedores/index.php">Vendedores</a>
+                <a class="link" href="../../sucursales/index.php">Sucursales</a>
+                <a class="link" href="../../ventas/index.php">Ventas</a>
+            </div>
+            <div class="cnx">
+                <?php
+                    require ("../cnx.php");
+                ?>
             </div>
         </nav>
     </header>
     <section>
         <article class="cards">
             <div class="img-card">
-                <img src="../assents/img/lagicons/iconmonstr-wrench-10.svg" alt="Buscar vehiculo" class="img-srch">
+                <img src="../../assents/img/lagicons/issue-type-requirements-svgrepo-com.svg" alt="Crear vehiculo" class="img-create">
             </div>
             <div class="body-card">
-                <h1 class="p-card">Encontrar equipamiento</h1>
-            </div>
-            <div class="footer-card">
-                <h3 class="txt-card">Aqui puede obtener el listado de equipamientos dispobles para cada modelo de automovil</h3>
-            </div>
-            <a class="a-card" href="../equipamiento/crear/tipo/consultar/index.php">
-                <div class="btn-card">
-                    <p class="p-btn">Buscar</p>
-                </div>
-            </a>
-        </article>
-        <article class="cards">
-            <div class="img-card">
-                <img src="../assents/img/lagicons/iconmonstr-wrench-12.svg" alt="Crear vehiculo" class="img-create">
-            </div>
-            <div class="body-card">
-                <h1 class="p-card">Agregar nuevos equipamiento</h1>
+                <h1 class="p-card">Tipos de equipamiento</h1>
             </div>
             <div  class="footer-card">
-                <h3 class="txt-card">Aqui puede agregar nuevos equipamientos para nuestros vehiculos</h3>
+                <h3 class="txt-card">Aqui puede consultar, crear, editar y eliminar los tipos de equipamiento de nuestro concesionario</h3>
             </div>
             <a class="a-card" href="../equipamiento/crear/index.php">
                 <div class="btn-card">
-                    <p class="p-btn">Registrar</p>
+                    <p class="p-btn">Tipo equipamiento</p>
                 </div>
             </a> 
         </article>
         <article class="cards">
             <div class="img-card">
-                <img src="../assents/img/lagicons/iconmonstr-wrench-16.svg" alt="Actualizar vehiculo" class="img-updt">
+                <img src="../../assents/img/lagicons/issue-type-maintenance-svgrepo-com.svg" alt="Crear vehiculo" class="img-create">
             </div>
             <div class="body-card">
-                <h1 class="p-card">Actualizar equipamiento</h1>
+                <h1 class="p-card">Nuevos equipamientos</h1>
             </div>
-            <div class="footer-card">
-                <h3 class="txt-card">Aqui puede editar y actualizar los equipamientos para nuestros vehiculos disponibles</h3>
+            <div  class="footer-card">
+                <h3 class="txt-card">Aqui puede consultar, crear, editar y eliminar equipamiento de nuestro concesionario</h3>
             </div>
-            <a class="a-card" href="../equipamiento/crear/tipo/view.php">
+            <a class="a-card" href="../equipamiento/crear/equipamientos/index.php">
                 <div class="btn-card">
-                    <p class="p-btn">Editar</p>
+                    <p class="p-btn">Equipamientos</p>
                 </div>
-            </a>
-        </article>
-        <article class="cards">
-            <div class="img-card">
-                <img src="../assents/img/lagicons/iconmonstr-wrench-18.svg" alt="Borrar registro" class="img-dlt">
-            </div>
-            <div class="body-card">
-                <h1 class="p-card">Borrar equipamiento</h1>
-            </div>
-            <div class="footer-card">
-                <h3 class="txt-card">Aqui puede suprimir los equipamientos que ya no haran parte de nuestro inventario</h3>
-            </div>
-            <a class="a-card" href="../equipamiento/crear/tipo/view.php">
-                <div class="btn-card">
-                    <p class="p-btn">Eliminar</p>
-                </div>
-            </a>
+            </a> 
         </article>
     </section>
     <footer>
