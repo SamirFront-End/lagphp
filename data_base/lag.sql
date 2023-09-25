@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 22-09-2023 a las 23:45:05
+-- Tiempo de generación: 25-09-2023 a las 22:41:23
 -- Versión del servidor: 10.1.38-MariaDB
 -- Versión de PHP: 7.3.2
 
@@ -44,6 +44,16 @@ CREATE TABLE `equipamiento` (
   `nombre_eq` varchar(30) NOT NULL,
   `precio_eq` int(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `equipamiento`
+--
+
+INSERT INTO `equipamiento` (`id_equipamiento`, `nombre_eq`, `precio_eq`) VALUES
+(1, 'Airbag', 140000),
+(2, 'Pintura Metalizada', 600000),
+(3, 'Retrovisor electrico', 250000),
+(4, 'Aire acondicionado', 120000);
 
 -- --------------------------------------------------------
 
@@ -100,11 +110,10 @@ CREATE TABLE `tipo_equipamiento` (
 INSERT INTO `tipo_equipamiento` (`id_tipo_eq`, `nombre_tipo_eq`) VALUES
 (1, 'Original'),
 (2, 'Adicional'),
-(3, 'Promocional'),
 (4, 'Preferencial'),
 (5, 'Premium'),
 (6, 'Gold'),
-(7, 'De prueba');
+(7, '  Silver');
 
 -- --------------------------------------------------------
 
@@ -136,7 +145,7 @@ INSERT INTO `vehiculos` (`Id_vehiculo`, `marca_veh`, `serie_veh`, `modelo_veh`, 
 (3, 'Chevrolet', 'Blaser RS', '2023', 'blaserrs32023', '308 HP', '3,6', '6', '2.722cm3', 215650000, '0'),
 (4, 'Mazda', 'Touring', '2024', 'touring42024', '153HP', '2,0', '4', '1.998cm3', 113950000, '0'),
 (5, 'Ford', 'Mustang GT Premium', '2024', 'ford5mgtp2024', '457HP', '5,0', '8', '5.000cm3', 244490000, '0'),
-(6, 'Toyota', 'LAND CRUISER', '2023', 'lcrtyt2023', '409HP', '5,0', '8', '3.445cm3', 600500000, '0');
+(6, 'Toyota', 'LAND CRUISER', '2023', 'lcrtyt2023', '409HP', '5,0', '8', '3.445cm3', 600000000, '0');
 
 -- --------------------------------------------------------
 
@@ -249,7 +258,7 @@ ALTER TABLE `disponibilidad`
 -- AUTO_INCREMENT de la tabla `equipamiento`
 --
 ALTER TABLE `equipamiento`
-  MODIFY `id_equipamiento` int(8) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_equipamiento` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT de la tabla `modo_pago`

@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../../../assents/css/reset.css">
-    <link rel="stylesheet" href="../../../../assents/css/equipamiento/tipos/consultar/consultindex.css">
+    <link rel="stylesheet" href="../../../../assents/css/crear/sucess.css">
     <link rel="icon" href="../../../../assents/img/favicon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/76750b34bb.js" crossorigin="anonymous"></script>
     <title>LaRusso Auto Group</title>
@@ -32,32 +32,9 @@
             </div>
         </nav>
     </header>
-    <section class="sct-srch-tipo">
-        <article class="cards">
-            <div class="img-card">
-                <img src="../../../../assents/img/lagicons/magnifying-glass-8-svgrepo-com.svg" alt="Buscar vehiculo" class="img-srch">
-            </div>
-            <div class="body-card">
-                <h1 class="p-card">Buscar tipo de equipamiento</h1>
-            </div>
-            <div class="footer-card">
-                <h3 class="txt-card">Aqui puede obtener el listado de tipos de equipamientos disponibles en nuestro concesionario</h3>
-            </div>
-        </article>
-    </section>
-    <section class="search">
-        <div class="resul">
-            <form method="POST" action="">
-                    <input class="buscar" type="text" name="bscr" placeholder="Buscar">
-                    <input class="btn-submit" type="submit" name="send" value= "Buscar">
-            </form>
-        </div>
-    </section>
-    <section class="resultado">
-        <?php
-            include ("function-consult.php");
-        ?>
-    </section>
+    <?php
+        include ("create.php");
+    ?>
     <footer>
         <div class="footer">
             <div class="dev">

@@ -111,9 +111,20 @@ form {
 .btn-submit:hover {
     background-color: var(--oscurotres);
 }
+.title {
+    margin-bottom: 20px;
+}
+.h1-title {
+    width: 60%;
+    margin: 20px auto;
+    text-align: center;
+    font-family: var(--fuenteuno);
+    font-size: xx-large;
+}
 .resultado {
     width: 90%;
     margin: auto;
+    margin-bottom: 20px;
 }
 .list-tipo {
     width: 90%;
@@ -166,6 +177,16 @@ form {
 }
 .fa-eye:hover {
     color: var(--oscurotres);
+}
+.fa-circle-plus, .fa-magnifying-glass {
+    color: var(--colortres);
+    margin-left: 10px;
+}
+.fa-circle-plus:hover, .fa-magnifying-glass:hover {
+    color: var(--oscurotres);
+}
+.a-add {
+    text-decoration: none;
 }
 footer {
     background-color: var(--coloruno);

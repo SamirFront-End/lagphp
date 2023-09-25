@@ -44,7 +44,7 @@
             <div class="footer-card">
                 <h3 class="txt-card">Aqui puede obtener el listado de equipamientos dispobles para cada modelo de automovil</h3>
             </div>
-            <a class="a-card" href="../equipamiento/crear/tipo/consultar/index.php">
+            <a class="a-card" href="consulta/consult.php">
                 <div class="btn-card">
                     <p class="p-btn">Buscar</p>
                 </div>

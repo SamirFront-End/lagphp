@@ -38,10 +38,10 @@
                 <img src="../../../../assents/img/lagicons/magnifying-glass-8-svgrepo-com.svg" alt="Buscar vehiculo" class="img-srch">
             </div>
             <div class="body-card">
-                <h1 class="p-card">Buscar tipo de equipamiento</h1>
+                <h1 class="p-card">Buscar equipamiento</h1>
             </div>
             <div class="footer-card">
-                <h3 class="txt-card">Aqui puede obtener el listado de tipos de equipamientos disponibles en nuestro concesionario</h3>
+                <h3 class="txt-card">Aqui puede obtener el listado de equipamientos disponibles en nuestro concesionario</h3>
             </div>
         </article>
     </section>
@@ -54,8 +54,13 @@
         </div>
     </section>
     <section class="resultado">
+    <div class="title">
+            <h1 class="h1-title">
+                Lista de equipamientos
+            </h1>
+        </div>
         <?php
-            include ("function-consult.php");
+            include ("fuction-consult.php");
         ?>
     </section>
     <footer>

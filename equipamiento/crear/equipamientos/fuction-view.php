@@ -38,10 +38,10 @@
        <div class='add'>
            <h2 class='h2-add'>
                Agregar nuevo o buscar registro 
-               <a href='crear/index.php' class='a-add'>
+               <a href='crear/form.php' class='a-add'>
                    <i class='fa-solid fa-circle-plus'></i>
                </a>
-               <a href='consultar/index.php' class= 'a-add'>
+               <a href='consulta/consult.php' class= 'a-add'>
                     <i class='fa-solid fa-magnifying-glass'></i>
                 </a>
            </h2>

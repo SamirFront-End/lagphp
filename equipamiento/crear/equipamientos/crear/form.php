@@ -42,14 +42,14 @@
             </p>
             <div class="cont-inp-creatipo">
                 <label class="lbl-eq" for="">Nombre equipamiento</label>
-                <input type="text" class="inp-create" name="tipo" placeholder="Ingresa el nuevo equipamiento">
+                <input type="text" class="inp-create" name="tipo" placeholder="Ingresa el nuevo equipamiento" required>
             </div>
             <div class="cont-inp-creatipo">
                 <label class="lbl-eq" for="">Precio equipamiento</label>
-                <input type="number" class="inp-create" name="tipo" placeholder="Ingresa el precio">
+                <input type="number" class="inp-create" name="precio" placeholder="Ingresa el precio" required>
             </div>
             <div class="cont-btns">
-                <input class="btn-creatipo" type="submit" value="Crear" require>
+                <input class="btn-creatipo" type="submit" value="Crear">
             </div>
         </form>
     </section>
