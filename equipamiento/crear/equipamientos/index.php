@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../../assents/css/reset.css">
     <link rel="stylesheet" href="../../../assents/css/cars/index.css">
+    <link rel="stylesheet" href="../../../assents/css/equipamiento/tipos/view.css">
     <link rel="icon" href="../../../assents/img/favicon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/76750b34bb.js" crossorigin="anonymous"></script>
     <title>LaRusso Auto Group</title>
@@ -24,6 +25,11 @@
                 <a class="link" href="../../../vendedores/index.php">Vendedores</a>
                 <a class="link" href="../../../sucursales/index.php">Sucursales</a>
                 <a class="link" href="../../../ventas/index.php">Ventas</a>
+            </div>
+            <div class="cnx" style="display: none;">
+                <?php
+                    require ("../../../cnx.php");
+                ?>
             </div>
         </nav>
     </header>
@@ -54,7 +60,7 @@
             <div  class="footer-card">
                 <h3 class="txt-card">Aqui puede agregar nuevos equipamientos para nuestros vehiculos</h3>
             </div>
-            <a class="a-card" href="../equipamiento/crear/index.php">
+            <a class="a-card" href="crear/form.php">
                 <div class="btn-card">
                     <p class="p-btn">Registrar</p>
                 </div>
@@ -92,6 +98,18 @@
                 </div>
             </a>
         </article>
+    </section>
+    <section class="sct-list-tipo">
+        <div class="title">
+            <h1 class="h1-title">
+                Lista de equipamientos
+            </h1>
+        </div>
+        <div class="cont-table">
+           <?php
+                include("../equipamientos/fuction-view.php");
+           ?>
+        </div>
     </section>
     <footer>
         <div class="footer">

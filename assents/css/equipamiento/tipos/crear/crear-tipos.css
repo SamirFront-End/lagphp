@@ -65,9 +65,16 @@ nav {
     font-size: x-large;
     margin-bottom: 20px;
 }
+.lbl-eq {
+    font-family: var(--fuentedos);
+    font-size: medium;
+    margin: 5px 0;
+    margin-left: 0;
+}
 .cont-inp-creatipo {
     display: grid;
     justify-items: center;
+    margin-bottom: 20px;
 }
 .inp-create {
     width: 90%;
