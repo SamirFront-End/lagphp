@@ -13,50 +13,39 @@
     <title>LaRusso Auto Group</title>
 </head>
 <body>
-    <?php
-        include ("cnx.php");
-    ?>
-    <!-- <header>
-        <nav>
+    <header class="h-index">
+        <nav class="nav-index">
+            <div class="fic">
+                <span></span>
+            </div>
             <div class="menu">
-                <a href="">Inicio</a>
-                <a href="">Vehiculo</a>
-                <a href="">Equipamiento</a>
-                <a href="">Vendedores</a>
-                <a href="">Sucursales</a>
-                <a href="">Ventas</a>
+                <a class="link" href="">Vehiculo</a>
+                <a class="link" href="">Equipamiento</a>
+                <a class="link" href="">Vendedores</a>
+                <a class="link" href="">Sucursales</a>
+                <a class="link" href="">Ventas</a>
+            </div>
+            <div class="cnx"> 
+                <a href="login.php" class="link">
+                    <i class="fa-regular fa-circle-user"></i>
+                    <!-- <i class="fa-solid fa-circle-user"></i> -->
+                </a> 
+                
             </div>
         </nav>
-    </header> -->
+    </header>
     <section>
         <div class="logo">
-            <img src="assents/img/logo.png" alt="LaRusso Auto Group">
+            <img class="img-logo" src="assents/img/logo.png" alt="LaRusso Auto Group">
         </div>
-        <div class="log_frm">
-            <form action="" method="post">
-                <fieldset>
-                    <legend>Ingresar</legend>
-                    <div class="i-log">
-                        <i class="fa-solid fa-user-lock"></i>
-                    </div>
-                    <div class="inp-cont">
-                        <input type="text" class="inp_log" name="usr" placeholder="Usuario" require>
-                        <label class="inp-lab" for="">Usuario</label>
-                    </div>
-                    <div class="inp-cont">
-                        <input type="password" class="inp_log" name="psw" placeholder="Contraseña" require>
-                        <label class="inp-lab" for="">Contraseña</label>
-                    </div> 
-                    <div class="inp-sub">
-                        <input class="submit" type="submit" value="Entrar">
-                    </div> 
-                    <div class="p-reg">
-                        <p>Si no tienes una cuenta  registrate 
-                            <a id="a-reg" href="./vehiculos/index.php">aqui</a>
-                        </p>
-                    </div>
-                </fieldset>
-            </form>
+        <div class="index">
+           <h1 class="h1-index">¡Bienvenido!</h1>
+           <h3 class="h3-index">Este es el sistema de control de ventas, vendedores, vehiculos, equipamientos y tiendas de nuestro concesionario</h3>
+           <a href="login.php" class="a-btn-index">
+            <div class="btn-index">
+                <p class="p-btn-index">Inicia sesion</p>
+            </div>
+           </a>
         </div>
     </section>
 </body>
