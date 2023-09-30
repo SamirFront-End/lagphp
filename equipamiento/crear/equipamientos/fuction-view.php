@@ -16,7 +16,7 @@
             <td class='td-table'>". $rows['nombre_eq'] ."</td>
             <td class='td-table'>". $rows['precio_eq'] ."</td>
             <td class='td-table-btn'>
-                <a class='td-btn-table' href='editar/index.php?ide=" .$rows['id_equipamiento']. "'>
+                <a class='td-btn-table' href='editar/frm-edit.php?ide=" .$rows['id_equipamiento']. "'>
                     <i class='fa-solid fa-pen-to-square'></i>
                 </a>
             </td>

@@ -106,6 +106,35 @@ nav {
     background-color: var(--oscurotres);
     cursor: pointer;
 }
+.btns-sucess {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    justify-content:space-evenly;
+}
+.btn-create-more, .return {
+    width: 60%;
+    background-color: var(--colortres);
+    cursor: pointer;
+    margin: 15px auto;
+}
+.return:hover {
+    background-color: var(--oscurotres);
+}
+.btn-create-more:hover {
+    background-color: var(--oscurotres);
+}
+.a-btn-sucess {
+    text-decoration: none;
+}
+.p-btn-sucess {
+    text-align: center;
+    color: white;
+    font-family: var(--fuenteuno);
+    font-size: medium;
+    padding: 15px;
+}
 footer {
     background-color: var(--coloruno);
     width: 90%;

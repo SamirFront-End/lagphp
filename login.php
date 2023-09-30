@@ -33,7 +33,7 @@
     </header>
     <section>
         <div class="logo">
-            <img src="assents/img/logo.png" alt="LaRusso Auto Group">
+            <img class="img-logo" src="assents/img/logo.png" alt="LaRusso Auto Group">
         </div>
         <div class="log_frm">
             <form action="" method="post">
