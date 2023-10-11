@@ -49,12 +49,12 @@
                 <td class='td-table'>". $rows['nombre_eq'] ."</td>
                 <td class='td-table'>". $rows['precio_eq'] ."</td>
                 <td class='td-table-btn'>
-                    <a class='td-btn-table' href='editar/index.php?ide=" .$rows['id_equipamiento']. "'>
+                    <a class='td-btn-table' href='../editar/frm-edit.php?ide=" .$rows['id_equipamiento']. "'>
                         <i class='fa-solid fa-pen-to-square'></i>
                     </a>
                 </td>
                 <td class='td-table-btn'>
-                    <a class='td-btn-table' href='eliminar/index.php?ide="  .$rows['id_equipamiento']. '&name=' .$rows['nombre_eq']. "'>
+                    <a class='td-btn-table' href='../borrar/confirm-delete.php?ide="  .$rows['id_equipamiento']. '&name=' .$rows['nombre_eq']. "'>
                         <i class='fa-solid fa-trash-can'></i>
                     </a>
                 </td>

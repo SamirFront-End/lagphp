@@ -10,7 +10,7 @@ header {
 }
 nav {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 45% 45% 10%;
     align-items: center;
     
 }
@@ -22,7 +22,7 @@ nav {
     margin: auto;
 }
 .link {
-    margin: 0 5px;
+    margin: 0 2.5px;
     text-decoration: none;
     font-family: var(--fuenteuno);
     font-weight: bolder;

@@ -1,0 +1,131 @@
+body {
+    background-image: url(../../../../img/pattern.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header {
+    width: 90%;
+    margin: auto;
+    background-color: var(--colorcuatro);
+}
+nav {
+    display: grid;
+    grid-template-columns: 45% 45% 10%;
+    align-items: center;
+    
+}
+.logo-img {
+    width: 30%;
+}
+.menu {
+    width: 80%;
+    margin: auto;
+}
+.link {
+    margin: 0 2.5px;
+    text-decoration: none;
+    font-family: var(--fuenteuno);
+    font-weight: bolder;
+    color: black;
+}
+.link:hover {
+    color: white;
+    font-size: large;
+    transition: 0.25s
+}
+.sct-xmodelo {
+    width: 90%;
+    margin: 50px auto;
+}
+.title {
+    display: grid;
+    justify-items: center;
+}
+.img-title {
+    width: 15%;
+}
+.h1-title {
+    width: 50%;
+    text-align: center;
+    font-family: var(--fuentedos);
+}
+.frm-xmodel {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: space-evenly;
+}
+.crd-xmodel {
+    background-color: var(--clarocuatro);
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+.cont-img {
+    display: grid;
+    justify-items: center;
+}
+.img-xmodel {
+    width: 35%;
+    margin-top: 10px;
+}
+.title-xmodel {
+    text-align: center;
+    font-family: var(--fuentedos);
+    font-size: x-large;
+}
+.lbl-xmodel {
+    font-family: var(--fuentetres);
+    font-size: large;
+    width: 70%;
+    margin: auto;
+    border: 1px solid var(--oscurocuatro);
+    border-radius: 20px;
+    margin-bottom: 5px;
+}
+.lbl-xmodel:hover {
+    background-color: var(--oscurocuatro);
+    border: 1px solid white;
+}
+.inp-model, .inp-teq, .inp-eq {
+    margin: 10px 10px 10px 30px;
+}
+.inp-model:hover, .inp-teq:hover, .inp-eq:hover {
+    cursor: pointer;
+}
+.submit-xmodel {
+    margin: 15px 5px;
+    border: none;
+    width: 50%;
+    padding: 10px;
+    background-color: var(--colortres);
+    color: white;
+    font-family: var(--fuenteuno);
+}
+.submit-xmodel:hover {
+    background-color: var(--oscurotres);
+    cursor: pointer;
+}
+footer {
+    background-color: var(--colorcuatro);
+    width: 90%;
+    margin: auto;
+}
+.footer {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    justify-content:center;
+}
+.dev, .networks {
+    margin: 15px;
+    text-align: center;
+}
+.p-footer {
+    font-family: var(--fuentetres);
+    font-size: smaller;
+}
+.icon_link {
+    color: white;
+    font-size: x-large;
+    margin: 0 5px;
+}

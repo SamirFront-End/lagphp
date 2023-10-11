@@ -26,9 +26,7 @@
                 <a class="link" href="../../ventas/index.php">Ventas</a>
             </div>
             <div class="cnx">
-                <?php
-                    require ("../cnx.php");
-                ?>
+                
             </div>
         </nav>
     </header>
@@ -62,6 +60,22 @@
             <a class="a-card" href="../equipamiento/crear/equipamientos/index.php">
                 <div class="btn-card">
                     <p class="p-btn">Equipamientos</p>
+                </div>
+            </a> 
+        </article>
+        <article class="cards">
+            <div class="img-card">
+                <img src="../../assents/img/lagicons/car-controller-part-svgrepo-com.svg" alt="Crear vehiculo" class="img-create">
+            </div>
+            <div class="body-card">
+                <h1 class="p-card">Equipamiento por vehiculo</h1>
+            </div>
+            <div  class="footer-card">
+                <h3 class="txt-card">Aqui puede consultar, crear, editar y eliminar los equipamientos por cada modelo de vehiculo</h3>
+            </div>
+            <a class="a-card" href="../equipamiento/crear/equipamientoxmodelo/index.php">
+                <div class="btn-card">
+                    <p class="p-btn">Equipamiento</p>
                 </div>
             </a> 
         </article>

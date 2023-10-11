@@ -39,7 +39,7 @@ section {
     margin-top: 50px;
     margin-bottom: 50px;
     display: grid;
-    grid-template-columns: 20% 20%;
+    grid-template-columns: 20% 20% 20%;
     justify-content: space-evenly;
 }
 .cards {

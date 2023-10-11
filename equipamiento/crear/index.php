@@ -25,6 +25,11 @@
                 <a class="link" href="../../sucursales/index.php">Sucursales</a>
                 <a class="link" href="../../ventas/index.php">Ventas</a>
             </div>
+            <div class="cnx">
+                <?php
+                    require ("../../cnx.php");
+                ?>
+            </div>
         </nav>
     </header>
     <section>
