@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 25-09-2023 a las 22:41:23
+-- Tiempo de generación: 11-10-2023 a las 02:48:58
 -- Versión del servidor: 10.1.38-MariaDB
 -- Versión de PHP: 7.3.2
 
@@ -42,7 +42,7 @@ CREATE TABLE `disponibilidad` (
 CREATE TABLE `equipamiento` (
   `id_equipamiento` int(8) NOT NULL,
   `nombre_eq` varchar(30) NOT NULL,
-  `precio_eq` int(10) NOT NULL
+  `precio_eq` int(7) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -50,10 +50,12 @@ CREATE TABLE `equipamiento` (
 --
 
 INSERT INTO `equipamiento` (`id_equipamiento`, `nombre_eq`, `precio_eq`) VALUES
-(1, 'Airbag', 140000),
-(2, 'Pintura Metalizada', 600000),
-(3, 'Retrovisor electrico', 250000),
-(4, 'Aire acondicionado', 120000);
+(1, 'Airbag Frontal', 180000),
+(2, 'Airbag Lateral ', 180000),
+(3, ' Retrovisor elÃ©ctrico  ', 250000),
+(4, 'Pintura Metalizada', 600000),
+(5, 'Kit de Carretera', 75000),
+(6, 'Aire acondicionado', 150000);
 
 -- --------------------------------------------------------
 
@@ -62,10 +64,27 @@ INSERT INTO `equipamiento` (`id_equipamiento`, `nombre_eq`, `precio_eq`) VALUES
 --
 
 CREATE TABLE `equipamiento_x_modelo` (
+  `id_eq_x_modelo` int(8) NOT NULL,
   `Id_vehiculo` int(8) NOT NULL,
   `id_equipamiento` int(8) NOT NULL,
   `id_tipo_eq` int(8) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `equipamiento_x_modelo`
+--
+
+INSERT INTO `equipamiento_x_modelo` (`id_eq_x_modelo`, `Id_vehiculo`, `id_equipamiento`, `id_tipo_eq`) VALUES
+(8, 3, 1, 1),
+(9, 3, 5, 1),
+(10, 3, 6, 1),
+(5, 4, 1, 1),
+(7, 4, 2, 2),
+(6, 4, 6, 1),
+(2, 5, 2, 2),
+(1, 5, 5, 1),
+(3, 6, 1, 1),
+(4, 6, 3, 2);
 
 -- --------------------------------------------------------
 
@@ -140,12 +159,12 @@ CREATE TABLE `vehiculos` (
 --
 
 INSERT INTO `vehiculos` (`Id_vehiculo`, `marca_veh`, `serie_veh`, `modelo_veh`, `bastidor_veh`, `potencia_veh`, `motor_veh`, `nro_cilindros_veh`, `cilindrada_veh`, `precio_veh`, `descuento_veh`) VALUES
-(1, 'Mini', 'jhon cooper', '2024', 'MINI012020', '231HP', '2,0', '4', '1.998cm3', 216900000, '0'),
+(1, 'Mini', 'jhon cooper', '2023', 'MINI012020', '231HP', '2,0', '4', '1.998cm3', 216900000, '0'),
 (2, 'Renault', 'Sandero', '2024', 'RENAULT202402', '111HP', '1.6', '4', '1.598cm3', 60990000, '0'),
 (3, 'Chevrolet', 'Blaser RS', '2023', 'blaserrs32023', '308 HP', '3,6', '6', '2.722cm3', 215650000, '0'),
 (4, 'Mazda', 'Touring', '2024', 'touring42024', '153HP', '2,0', '4', '1.998cm3', 113950000, '0'),
 (5, 'Ford', 'Mustang GT Premium', '2024', 'ford5mgtp2024', '457HP', '5,0', '8', '5.000cm3', 244490000, '0'),
-(6, 'Toyota', 'LAND CRUISER', '2023', 'lcrtyt2023', '409HP', '5,0', '8', '3.445cm3', 600000000, '0');
+(6, 'Toyota', 'Land Cruseir', '2023', 'lcrtyt2023', '409HP', '5,0', '8', '3.445cm3', 600000000, '0');
 
 -- --------------------------------------------------------
 
@@ -199,6 +218,7 @@ ALTER TABLE `equipamiento`
 -- Indices de la tabla `equipamiento_x_modelo`
 --
 ALTER TABLE `equipamiento_x_modelo`
+  ADD PRIMARY KEY (`id_eq_x_modelo`),
   ADD KEY `Id_marca` (`Id_vehiculo`,`id_equipamiento`,`id_tipo_eq`),
   ADD KEY `id_equipamiento` (`id_equipamiento`),
   ADD KEY `id_tipo_eq` (`id_tipo_eq`);
@@ -258,7 +278,13 @@ ALTER TABLE `disponibilidad`
 -- AUTO_INCREMENT de la tabla `equipamiento`
 --
 ALTER TABLE `equipamiento`
-  MODIFY `id_equipamiento` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id_equipamiento` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
+--
+-- AUTO_INCREMENT de la tabla `equipamiento_x_modelo`
+--
+ALTER TABLE `equipamiento_x_modelo`
+  MODIFY `id_eq_x_modelo` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT de la tabla `modo_pago`
